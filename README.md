@@ -13,7 +13,7 @@ git clone https://github/com/vmi1994/solar-panel-angle-calc
 cd solar-panel-angle-calc
 ```
 ```
-sudo docker build -t solar .
+sudo docker build -t solar . # ON MAC: sudo docker buildx build -t solar .
 ```
 ```
 sudo docker run -it --rm --name solar solar
