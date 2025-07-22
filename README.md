@@ -5,7 +5,9 @@
 A simple docker container to give you the proper angle for solar panels by season and zip code.  Requires docker.
 
 ```
-git clone https://github.com/VMI1994/Docker-Portainer.git && cd Docker-Portainer && bash
+git clone https://github.com/VMI1994/Docker-Portainer.git && cd Docker-Portainer && bash Install.sh
+```
+
 Usage:
 
 ```
