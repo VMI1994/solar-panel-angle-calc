@@ -21,11 +21,13 @@ def get_location_from_zip(zip_code):
 
 def calculate_tilt(lat, season):
     """Calculate optimal tilt angle based on season."""
-    if season == "Winter":
+    if season == "Winter 11/6-2/4":
         return round(lat + 15, 2)
-    elif season == "Spring/Fall":
+    elif season == "Spring 2/5-5/7":
         return round(lat, 2)
-    elif season == "Summer":
+    elif season == "Fall 8/6-11/6":
+        return round(lat, 2)
+    elif season == "Summer 5/7-8/5":
         return round(lat - 15, 2)
     else:
         return None
@@ -43,11 +45,11 @@ def main():
     print(f"\n📍 Latitude: {lat}°")
 
     # Calculate tilt angles for each season
-    seasons = ["Winter", "Spring/Fall", "Summer"]
+    seasons = ["Winter 11/6-2/4", "Spring 2/5-5/7", "Fall 8/6-11/6", "Summer 5/7-8/5"]
     results = {season: calculate_tilt(lat, season) for season in seasons}
 
     # Display results
-    print("\n📐 Recommended Tilt Angles (Degrees):")
+    print("\n📐 Recommended Tilt Angles (Degrees) from Horizontal:")
     for season, angle in results.items():
         print(f"- {season}: {angle}°")
 
