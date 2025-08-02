@@ -22,13 +22,13 @@ def get_location_from_zip(zip_code):
 def calculate_tilt(lat, season):
     """Calculate optimal tilt angle based on season."""
     if season == "Winter 11/6-2/4":
-        return round(lat + 12, 2)
+        return round(lat + 15, 2)
     elif season == "Spring 2/5-5/7":
-        return round(lat - 3, 2)
+        return round(lat, 2)
     elif season == "Fall 8/6-11/6":
-        return round(lat -3, 2)
+        return round(lat, 2)
     elif season == "Summer 5/7-8/5":
-        return round(lat - 18, 2)
+        return round(lat - 15, 2)
     else:
         return None
 
