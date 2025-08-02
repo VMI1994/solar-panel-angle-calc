@@ -11,7 +11,7 @@ git clone https://github.com/VMI1994/Docker-Portainer.git && cd Docker-Portainer
 Usage:
 
 ```
-git clone https://github/com/vmi1994/solar-panel-angle-calc
+git clone https://github.com/vmi1994/solar-panel-angle-calc
 ```
 ```
 cd solar-panel-angle-calc
