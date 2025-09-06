@@ -4,11 +4,13 @@
 
 A simple docker container to give you the proper angle for solar panels by season and zip code.  Requires docker.
 
+QUICK RUN:
+``` docker run -it --rm --name solar vmi1994/solar:latest ```
+
+USAGE:
 ```
 git clone https://github.com/VMI1994/Docker-Portainer.git && cd Docker-Portainer && bash Install.sh
 ```
-
-Usage:
 
 ```
 git clone https://github.com/vmi1994/solar-panel-angle-calc
